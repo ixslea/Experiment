@@ -1,5 +1,6 @@
 from customtkinter import *
 import subprocess, os, sys
+from recursive_algorithm import fibRecursion
 
 set_appearance_mode("System")
 set_default_color_theme("blue")
@@ -64,11 +65,10 @@ class App(CTk):
     def clickedRun(self):
         alg = self.combobox.get()
         num = int(self.entry.get())
-        command = f"python {alg}.py"
+        command = f"{alg}.py"
         print(command)
-        process = os.execvp(f"{alg}.py", num)
-        output, error = process.communicate()
-        print(output, error)
+        result = subprocess.run(["python", command, str(num)], shell=False, capture_output=True, text=True)
+        print(result.stdout, result.stderr)
 
 
 
