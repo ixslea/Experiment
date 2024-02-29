@@ -10,28 +10,34 @@ All algorithms are run in pure Python, creating a separate process that is assig
 How to use it?
 -----------------
 First of all:
-[x] '''git clone https://github.com/ixslea/Experiment.git'''
-[x] '''pip install -r requirements.txt'''
+
+- [x] `git clone https://github.com/ixslea/Experiment.git`
+      
+- [x] `pip install -r requirements.txt`
 -----------------
 
 1. Choose 'Fibonacci' or 'Harmonic' on button above.
 
 2. Then choose one of the given algorithms to run.
 
-3. 1. Enter number of steps and then number of runs (from 0 to 100) by keyboard or slider.
+3. Enter number of steps and then number of runs (from 0 to 100) by keyboard or slider.
 
-3. 2. Do not forget to press the buttons to submit the numbers you entered!
+4. Do not forget to press the buttons to submit the numbers you entered!
 
-4. If you want to get graphs of the average running time of the algorithms, check the "Show graphs" box.
+5. If you want to get graphs of the average running time of the algorithms, check the "Show graphs" box.
 
-5. Press 'Run' button.
+6. Press 'Run' button.
 -----------------
 
-<h2>After calculation all results would be saved in file "experiment_log_info.log". 
+<h2>After calculation all results would be saved in file "experiment_log_info.log".
+        
 IF YOU WANT TO USE IT LATER DO NOT FORGET TO RENAME IT!
+
 Otherwise, after clicking the 'Run' button, all the results would be overwritten.</h2>
 
 
-<italic>contact information:
-        - github: @ixslea 
-        - mail: mpodstava@gmail.com</italic>
+_contact information:_
+
+        - github: @ixslea
+        
+        - mail: mpodstava@gmail.com
