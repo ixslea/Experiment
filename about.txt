@@ -11,13 +11,13 @@ How to use it?
 
 2) Then choose one of the given algorithms to run.
 
-3.1) Enter number of steps and then number of runs (from 0 to 100) by keyboard or slider.
+3) Enter number of steps and then number of runs (from 0 to 100) by keyboard or slider.
 
-3.2) Do not forget to press the buttons to submit the numbers you entered!
+4) Do not forget to press the buttons to submit the numbers you entered!
 
-4) If you want to get graphs of the average running time of the algorithms, check the "Show graphs" box.
+5) If you want to get graphs of the average running time of the algorithms, check the "Show graphs" box.
 
-5) Press 'Run' button.
+6) Press 'Run' button.
 -----------------
 
 After calculation all results would be saved in file "experiment_log_info.log". 
