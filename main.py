@@ -1,5 +1,5 @@
 from customtkinter import *
-import subprocess, psutil, platform, logging, drowPlots, markdown
+import subprocess, psutil, platform, logging, drowPlots, os
 from PIL import Image
 
 
@@ -120,7 +120,7 @@ class tabView(CTkTabview):
 
     """ Show code to execute after choosing algorithm """
     def algoChange(self, value):
-        file =  open(f"codeLabels/{value}.txt", "r")
+        file =  open(f"codeLabels{os.sep}{value}.txt", "r")
         code = file.read()
         file.close()
         logging.info(f"Chosen algorithm: {value}")
@@ -158,7 +158,7 @@ class tabView(CTkTabview):
         alg = str(self.currentTabIndex-1) + str(self.algoValues[self.currentTabIndex-1].index(algName))
         steps = int(self.entrySteps.get())
         runs = int(self.entryRuns.get())
-        command = f"algs/{alg}.py"
+        command = f"algs{os.sep}{alg}.py"
         self.resultTotal = [0] *steps
         
         logging.info(f"{algName} ran")
@@ -181,8 +181,8 @@ class tabView(CTkTabview):
         if self.showResults.get() == 1:
             drowPlots.plotting(steps, self.resultTotal, algName)
 
-            self.plotNormal = CTkImage(light_image=Image.open(f"resultPlots/{algName}_average.png"),size=(375, 300))
-            self.plotLogScaled = CTkImage(light_image=Image.open(f"resultPlots/{algName}_average_log_scaled.png"),size=(375, 300))
+            self.plotNormal = CTkImage(light_image=Image.open(f"resultPlots{os.sep}{algName}_average.png"),size=(375, 300))
+            self.plotLogScaled = CTkImage(light_image=Image.open(f"resultPlots{os.sep}{algName}_average_log_scaled.png"),size=(375, 300))
             self.plotInput()
 
         """ Return unsubmitted color """
@@ -214,9 +214,8 @@ class App(CTk):
         self.geometry("1000x600+400x400")
         self.maxsize(1000, 600)
         self.title("Experiment")
-
         self.iconbitmap("icon.ico")
-
+    
         self.tabview = tabView(master=self)
         
 
