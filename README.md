@@ -11,10 +11,11 @@ How to use it?
 -----------------
 First of all in your Terminal:
 
-- [x] `git clone https://github.com/ixslea/Experiment.git`
-- [x] `cd Experiment`
-- [x] `pip install -r requirements.txt`
-- [x] `python Experiment.py`
+- [x]  Navigate to the location where you want the repository to be copied, using the cd command
+- [x]  Clone Experiment on your computer: `git clone https://github.com/ixslea/Experiment.git`
+- [x]  Navigate to the Experiment folder: `cd Experiment`
+- [x]  Install the necessary packages: `pip install -r requirements.txt`
+- [x]  Run Experiment: `python Experiment.py`
 -----------------
 
 1. Choose 'Fibonacci' or 'Harmonic' on button above.
