@@ -181,8 +181,8 @@ class tabView(CTkTabview):
         if self.showResults.get() == 1:
             drowPlots.plotting(steps, self.resultTotal, algName)
 
-            self.plotNormal = CTkImage(light_image=Image.open(f"resultPlots{os.sep}{algName}_average.png"),size=(375, 300))
-            self.plotLogScaled = CTkImage(light_image=Image.open(f"resultPlots{os.sep}{algName}_average_log_scaled.png"),size=(375, 300))
+            self.plotNormal = CTkImage(light_image=Image.open(f"{algName}_average.png"),size=(375, 300))
+            self.plotLogScaled = CTkImage(light_image=Image.open(f"{algName}_average_log_scaled.png"),size=(375, 300))
             self.plotInput()
 
         """ Return unsubmitted color """

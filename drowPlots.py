@@ -6,13 +6,13 @@ def plotting(steps, results, algName):
 
     plt.plot(x, results, '-o', color = "blue", label = f"{algName}: average execution time (ns)")
     plt.legend()
-    plt.savefig(f'resultPlots/{algName}_average.png')
+    plt.savefig(f'{algName}_average.png')
     plt.close()
 
     plt.plot(x, results, '-o', color = "blue", label = f"{algName}: average execution time (ns) (log-scale plot)")
     plt.legend()
     plt.yscale('log')
-    plt.savefig(f'resultPlots/{algName}_average_log_scaled.png')
+    plt.savefig(f'{algName}_average_log_scaled.png')
     plt.close()
 
 if __name__== "__main__":
