@@ -9,11 +9,12 @@ All algorithms are run in pure Python, creating a separate process that is assig
 -----------------
 How to use it?
 -----------------
-First of all:
+First of all in your Terminal:
 
 - [x] `git clone https://github.com/ixslea/Experiment.git`
-      
+- [x] `cd Experiment`
 - [x] `pip install -r requirements.txt`
+- [x] `python Experiment.py`
 -----------------
 
 1. Choose 'Fibonacci' or 'Harmonic' on button above.
