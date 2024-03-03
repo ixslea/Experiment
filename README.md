@@ -30,7 +30,7 @@ First of all in your Terminal:
 6. Press 'Run' button.
 -----------------
 
-<h2>After calculation all results would be saved in file "experiment_log_info.log".
+<h2>After calculation all results would be saved in file "experiment_log_info.log" in folder 'Experiment'.
         
 IF YOU WANT TO USE IT LATER DO NOT FORGET TO RENAME IT!
 
